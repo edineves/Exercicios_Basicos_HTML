@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+  <head>  
+    <meta charset="UTF-8">
+    <title> cadastro </title>
+  </head>
+
+  <body bgcolor=" silver ">
+    <h1>  Cadastro Básico de Clientes  </h1>
+
+    <form action ="gravarCliente.php" 
+          method="get">
+
+          Nome do cliente: 
+          <input type="text"
+                
+                 size="40"
+                 maxlength="40"
+                 placeholder="informe aqui o nome do cliente ">
+                 <br>
+
+          Nascimento:
+          <input type="date" name="nascimento" id=" ">
+                 <br>
+           
+          <fieldset>
+          <legend> Sexo: </legend>      
+          <input type="radio" name="sexo" value="M"checked > Masculino.
+          <input type="radio" name="sexo" value="F" > Feminino.
+          </fieldset>
+          <br>
+          
+          Estado Civil:
+          <select name="Tipo">
+            <option value=""> Escolha </option>  
+            <option value="Casado"> Casado(a) </option> 
+            <option value="Solteiro"> Solteiro(a) </option>
+            <option value="Viuvo"> Viuvo(a) </option>        
+		      </select>
+          <br>
+
+          <h2> Dados para contato </h2>
+
+          e-mail:
+          <input type="text" 
+                 name= "e-mail ">
+                 <br>
+          <input type="checkbox" 
+                 name="e-mail" 
+                 maxlength="40"> 
+                 Deseja receber e-mails.
+          <br>
+          Telefone:
+          <input type="Text" name= "DDD 1" size="2" maxlength="2"> 
+          <input type="Text" name="telefone 1" size="9" maxlength="9">           
+          <select name="Tipo">
+            <option value=""> Tipo </option>           
+            <option value="R"> Residencial </option>
+            <option value="C"> Celular </option>
+            <option value="R"> Recados </option>
+          </select>
+          <br>
+          Telefone:
+          <input type="Text" name= "DDD 2" size="2" maxlength="2"> 
+          <input type="Text" name="telefone 2" size="9" maxlength="9">           
+          <select name="Tipo">
+            <option value=""> Tipo </option>           
+            <option value="R"> Residencial </option>
+            <option value="C"> Celular </option>
+            <option value="R"> Recados </option>
+          </select>
+          <br>
+          Telefone:
+          <input type="Text" name= "DDD 3" size="2" maxlength="2"> 
+          <input type="Text" name="telefone 3" size="9" maxlength="9">           
+          <select name="Tipo">
+            <option value=""> Tipo </option>           
+            <option value="R"> Residencial </option>
+            <option value="C"> Celular </option>
+            <option value="R"> Recados </option>
+          </select>
+          <br><br>
+
+          <fieldset>
+          <legend> Observações: </legend>      
+          <input type="text" 
+                size="250"                 
+                maxlength="250" 
+                  placeholder="Insira suas observações aqui.">          
+          </fieldset>
+          <br>
+                  
+      
+        <hr>		   
+		<input type="submit" value=" Enviar os Dados "> 
+          
+    </form>
+	
+	</body>
+
+</html>
